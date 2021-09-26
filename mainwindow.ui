@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notatnik</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>530</y>
+      <width>47</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>530</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Liczba znaków</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="poprzedniBtn">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>530</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poprzedni</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nastepnyBtn">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>530</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nastepny</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>530</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ilość wystąpień</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>530</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtworz"/>
+    <addaction name="actionZapisz"/>
+    <addaction name="actionZapisz_jako"/>
+    <addaction name="actionZamknij"/>
+   </widget>
+   <widget class="QMenu" name="menuEdytuj">
+    <property name="title">
+     <string>Edytuj</string>
+    </property>
+    <addaction name="actionKopiuj"/>
+    <addaction name="actionWytnij"/>
+    <addaction name="actionWklej"/>
+    <addaction name="actionPrzywroc"/>
+    <addaction name="actionCofnij"/>
+    <addaction name="actionGodzina_data"/>
+   </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <addaction name="actionCzcionka"/>
+    <addaction name="actionPowieksz"/>
+    <addaction name="actionPomniejsz"/>
+    <addaction name="actionPogrubienie"/>
+   </widget>
+   <widget class="QMenu" name="menuO_nas">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionO_nas"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuEdytuj"/>
+   <addaction name="menuFormat"/>
+   <addaction name="menuO_nas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNowy">
+   <property name="text">
+    <string>Nowy</string>
+   </property>
+  </action>
+  <action name="actionOtworz">
+   <property name="text">
+    <string>Otwórz</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </action>
+  <action name="actionZapisz_jako">
+   <property name="text">
+    <string>Zapisz jako</string>
+   </property>
+  </action>
+  <action name="actionKopiuj">
+   <property name="text">
+    <string>Kopiuj</string>
+   </property>
+  </action>
+  <action name="actionWytnij">
+   <property name="text">
+    <string>Wytnij</string>
+   </property>
+  </action>
+  <action name="actionWklej">
+   <property name="text">
+    <string>Wklej</string>
+   </property>
+  </action>
+  <action name="actionPrzywroc">
+   <property name="text">
+    <string>Przywróć</string>
+   </property>
+  </action>
+  <action name="actionCofnij">
+   <property name="text">
+    <string>Cofnij</string>
+   </property>
+  </action>
+  <action name="actionCzcionka">
+   <property name="text">
+    <string>Czcionka</string>
+   </property>
+  </action>
+  <action name="actionGodzina_data">
+   <property name="text">
+    <string>Godzina/data</string>
+   </property>
+  </action>
+  <action name="actionZamknij">
+   <property name="text">
+    <string>Zamknij</string>
+   </property>
+  </action>
+  <action name="actionPowieksz">
+   <property name="text">
+    <string>Powiększ</string>
+   </property>
+  </action>
+  <action name="actionPomniejsz">
+   <property name="text">
+    <string>Pomniejsz</string>
+   </property>
+  </action>
+  <action name="actionPogrubienie">
+   <property name="text">
+    <string>Pogrubienie</string>
+   </property>
+  </action>
+  <action name="actionO_nas">
+   <property name="text">
+    <string>O nas</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
